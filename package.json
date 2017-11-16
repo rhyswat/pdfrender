@@ -1,0 +1,16 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "render": "wkhtmltopdf --header-spacing 20 --footer-spacing 20 --disable-smart-shrinking --header-html http://localhost:3000/header --footer-html http://localhost:3000/footer http://localhost:3000/body  test.pdf",
+    "body":   "wkhtmltopdf http://localhost:3000/body  --header-line --footer-line test.pdf"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
